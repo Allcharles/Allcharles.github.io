@@ -1,95 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <base href="/" />
-
+    <meta charset="UTF-8" />
     <meta
-      name="description"
-      content="Website for online ecoacoustic analysis"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="msapplication-starturl" content="/" />
-    <meta name="theme-color" content="#343a40" />
-    <link rel="manifest" href="/manifest.json" />
-
-    <!-- inline spinner styles to be able to display spinner right away -->
-    <style type="text/css">
-      body,
-      html {
-        height: 100%;
-      }
-      .logo {
-        font-size: 1.5rem;
-      }
-      .app-loading {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-      }
-      .app-loading .spinner {
-        height: 200px;
-        width: 200px;
-        animation: rotate 2s linear infinite;
-        transform-origin: center center;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-      }
-      .app-loading .spinner .path {
-        stroke-dasharray: 1, 200;
-        stroke-dashoffset: 0;
-        animation: dash 1.5s ease-in-out infinite;
-        stroke-linecap: round;
-        stroke: #28a745;
-      }
-      @keyframes rotate {
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-      @keyframes dash {
-        0% {
-          stroke-dasharray: 1, 200;
-          stroke-dashoffset: 0;
-        }
-        50% {
-          stroke-dasharray: 89, 200;
-          stroke-dashoffset: -35px;
-        }
-        100% {
-          stroke-dasharray: 89, 200;
-          stroke-dashoffset: -124px;
-        }
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <!-- External stylesheet -->
+    <link
+      rel="stylesheet"
+      href="./css/styles.css" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicon.ico" />
+    <style>
+      body {
+        overflow: hidden;
       }
     </style>
-  <link rel="stylesheet" href="styles.16d7f403aff3e9508881.css"></head>
+
+    <title>Charles & Haruka | Save the Date</title>
+  </head>
   <body>
-    <app-root>
-      <!-- loading layout replaced by app after startup -->
-      <div class="app-loading">
-        <div class="logo">Ecosounds</div>
-        <svg class="spinner" viewBox="25 25 50 50">
-          <circle
-            class="path"
-            cx="50"
-            cy="50"
-            r="20"
-            fill="none"
-            stroke-width="2"
-            stroke-miterlimit="10"
-          />
-        </svg>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <svg
+        id="heart"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512">
+        <!-- Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <path
+          d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+      </svg>
+      <ul
+        id="navMenu"
+        class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./docs/schedule.html">Schedule</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-box">
+        <h1>Save<br />the Date</h1>
+        <h2>Charles & Haruka</h2>
+        <p>
+          Tiffany Melany
+          <br />409 Mountain View Rd<br />Maleny
+        </p>
+        <h3>20.08.26</h3>
       </div>
-    </app-root>
-  <script src="runtime-es2015.409e6590615fb48d139f.js" type="module"></script><script src="runtime-es5.409e6590615fb48d139f.js" nomodule defer></script><script src="polyfills-es5.3a71a305187a485a629d.js" nomodule defer></script><script src="polyfills-es2015.f37c620f822099eb3a8b.js" type="module"></script><script src="main-es2015.14c3fd1899db288120e7.js" type="module"></script><script src="main-es5.14c3fd1899db288120e7.js" nomodule defer></script></body>
+    </header>
+
+    <!-- External JavaScript -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>
