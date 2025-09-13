@@ -74,8 +74,6 @@ p {
   opacity: 1;
   display: block;
   z-index: 2;
-  transform: scale(1);
-  transition: all ease-in 0.5s;
 }
 
 #heart:focus {
@@ -85,7 +83,6 @@ p {
 #heart:hover {
   cursor: pointer;
   opacity: 0.6;
-  transform: scale(0.7);
 }
 
 #heart:active {
